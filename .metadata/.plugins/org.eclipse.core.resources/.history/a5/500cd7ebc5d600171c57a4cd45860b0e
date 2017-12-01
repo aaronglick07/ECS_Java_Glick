@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class UserInputofData 
+{
+	public static void main(String[] args) 
+	{
+		Scanner keyboard = new Scanner(System.in);
+		String firstName, lastName, login;
+		int grade, studentID;
+		double GPA;
+		
+		System.out.println("Please enter your information so I can sell it for profit");
+		
+	}
+
+}
