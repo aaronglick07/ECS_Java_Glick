@@ -6,7 +6,7 @@ public class dice
 		Random ran1 = new Random();
 		Random ran2 = new Random();
 		int num1 = 1 + ran1.nextInt(6);
-		int num2 = 2 + ran1.nextInt(6);
+		int num2 = 2 + ran2.nextInt(6);
 		
 		System.out.println("HERE COMES THE DICE!");
 		
