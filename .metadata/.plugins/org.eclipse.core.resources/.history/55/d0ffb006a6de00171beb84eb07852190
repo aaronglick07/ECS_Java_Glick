@@ -1,0 +1,28 @@
+
+public class EvennessMethod {
+	public static void main(String[] args) {
+	for (int i = 1; i <= 100; i++) {
+		System.out.println(i = isEven(i) + isDivBy3(i));
+		
+	}
+	}
+	public static String isEven(int x) {
+		String iseven = "<";
+		if (x % 2 == 0) {
+			return iseven;
+		}
+		else {
+			return "";
+		}
+	}
+	public static String isDivBy3(int x){
+		String isdivby3 = "=";
+		if (x % 3 == 0) {
+			return isdivby3;
+		}
+		else {
+			return "";
+		}
+		
+	}
+}

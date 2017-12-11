@@ -34,17 +34,17 @@ public class FillInMethodss {
 		credits();
 	}
 
-	
-	  public static void credits(  ){ // No parameters. { // displays some
-	 // boilerplate text saying who wrote this program, etc.
-	  
-	  System.out.println(); System.out.println("programmed by Sam Cummings");
-	  System.out.println("modified by Aaron Glick"); System.out.
-	 print("This code is distributed under the terms of the standard ");
-	  System.out.println("BSD license.  Do with it as you wish.");
-	  
-	  return; }
-	 
+	public static void credits() { // No parameters. { // displays some
+		// boilerplate text saying who wrote this program, etc.
+
+		System.out.println();
+		System.out.println("programmed by Sam Cummings");
+		System.out.println("modified by Aaron Glick");
+		System.out.print("This code is distributed under the terms of the standard ");
+		System.out.println("BSD license.  Do with it as you wish.");
+
+		return;
+	}
 
 	public static char randchar() {// No parameters. { // chooses a
 		// random character in the range "A" to "Z"
@@ -71,12 +71,16 @@ public class FillInMethodss {
 		return start;
 	}
 
-	public static int abso( int value, int absval ) // Parameters are: int value; 
-	{ 
-	 //finds the absolute value of the parameter int absval;
-	  
-	  if ( value < 0 ) absval = -value; else absval = value;
-	  
-	  return absval; }
+	public static int abso(int value, int absval) // Parameters are: int value;
+	{
+		// finds the absolute value of the parameter int absval;
+
+		if (value < 0)
+			absval = -value;
+		else
+			absval = value;
+
+		return absval;
+	}
 
 }
