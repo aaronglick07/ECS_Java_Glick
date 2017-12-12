@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		int input = 0;
+		System.out.println("What would you like to do?");
+		while (input != 5) {
+			System.out.println("1) Add");
+			System.out.println("2) Subtract");
+			System.out.println("3) muiltply");
+			System.out.println("4) divide");
+			System.out.println("5) quit");
+			input = keyboard.nextInt();
+			if (input == 5) {
+				break;
+			}
+			else if (input == 1) {
+				System.out.println("The answer is " + add());
+			} else if (input == 2) {
+				System.out.println("The answer is " + sub());
+			}else if (input == 3) {
+				System.out.println("The answer is " + muiltply());
+			}else if (input == 4) {
+				System.out.println("The answer is " + divide());
+			}
+			input = 0;
+		}
+	}
+
+	public static double add() {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Enter your first number");
+		double num1 = keyboard.nextInt();
+		System.out.println("Enter your second number");
+		double num2 = keyboard.nextInt();
+		double x;
+		x = num1 + num2;
+		return x;
+	}
+
+	public static double sub() {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Enter your first number");
+		double num1 = keyboard.nextInt();
+		System.out.println("Enter your second number");
+		double num2 = keyboard.nextInt();
+		double x;
+		x = num1 - num2;
+		return x;
+	}
+
+	public static double muiltply() {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Enter your first number");
+		double num1 = keyboard.nextInt();
+		System.out.println("Enter your second number");
+		double num2 = keyboard.nextInt();
+		double x;
+		x = num1 * num2;
+		return x;
+	}
+
+	public static double divide() {
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Enter your first number");
+		double num1 = keyboard.nextInt();
+		System.out.println("Enter your second number");
+		double num2 = keyboard.nextInt();
+		double x;
+		x = num1 / num2;
+		return x;
+	}
+}
