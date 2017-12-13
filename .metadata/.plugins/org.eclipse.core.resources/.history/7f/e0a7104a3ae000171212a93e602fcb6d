@@ -7,7 +7,7 @@ public class CountingFor {
 		System.out.println("message: ");
 		String message = keyboard.nextLine();
 		
-		for (int n = 1; n <= 5; n=n+1) {
+		for (int n = 2; n <= 20; n+=3) {
 			System.out.println(n + ". " + message);
 		}
 	}
