@@ -25,7 +25,7 @@ public class keyChains {
 				checkout(x);
 			}
 		} while (input != 4);
-		
+		keyboard.close();
 	}
 
 	public static int add(int i) {
@@ -34,7 +34,7 @@ public class keyChains {
 		int x = keyboard.nextInt();
 		x += i;
 		System.out.println("You now have " + x + " keychains");
-		
+		keyboard.close();
 		return x;
 	}
 
@@ -44,7 +44,7 @@ public class keyChains {
 		int x = keyboard.nextInt();
 		x -= i;
 		System.out.println("You now have " + -x + " keychains");
-		
+		keyboard.close();
 		return -x;
 	}
 
@@ -64,6 +64,6 @@ public class keyChains {
 		int cost = x * 10;
 		System.out.println("total cost is $" + cost);
 		System.out.println("Thanks for your order, " + name);
-		
+		keyboard.close();
 	}
 }

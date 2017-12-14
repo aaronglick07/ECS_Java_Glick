@@ -11,9 +11,9 @@ public class MoreFillInMethods {
 		lo = 1;
 		hi = 10;
 		val1 = superrand(lo, hi);
-		System.out.println("First: " + val1);
+		System.out.println("First: " + superrand(lo, hi));
 		val2 = superrand(hi, lo); // this time, put hi first
-		System.out.println("Second: " + val2);
+		System.out.println("Second: " + superrand(hi, lo));
 		if (val1 == val2)
 			System.out.println("Hey!  They were the same!");
 		else
